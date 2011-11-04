@@ -8,7 +8,7 @@ function box_name {
 }
 
 PROMPT='
-%{$fg_bold[magenta]%}%n%{$reset_color%} at %{$fg[green]%}$(box_name)%{$reset_color%} in %{$fg_bold[blue]%}${PWD/#$HOME/~}%{$reset_color%}
+%{$fg[cyan]%}%n%{$reset_color%} at %{$fg[green]%}$(box_name)%{$reset_color%} in %{$fg[cyan]%}${PWD/#$HOME/~}%{$reset_color%}
 $(virtualenv_info)%(?,,%{${fg_bold[red]}%}[%?]%{$reset_color%} )%{$fg[green]%}$ '
 
 local return_status="%{$fg[red]%}%(?..✘)%{$reset_color%}"

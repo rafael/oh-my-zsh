@@ -1,6 +1,6 @@
 # ls colors
 autoload colors; colors;
-export LSCOLORS="ExFxcxdxBxegedabagacad"
+export LSCOLORS="gxFxcxdxBxegedabagacad"
 #export LS_COLORS
 # Enable ls colors
 if [ "$DISABLE_LS_COLORS" != "true" ]
