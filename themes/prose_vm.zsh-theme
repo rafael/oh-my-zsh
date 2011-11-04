@@ -10,6 +10,3 @@ function box_name {
 PROMPT='
 %{$fg[cyan]%}%n%{$reset_color%} at %{$fg[green]%}$(box_name)%{$reset_color%} in %{$fg[cyan]%}${PWD/#$HOME/~}%{$reset_color%}
 $(virtualenv_info)%(?,,%{${fg_bold[red]}%}[%?]%{$reset_color%} )%{$fg[green]%}$ '
-
-local return_status="%{$fg[red]%}%(?..✘)%{$reset_color%}"
-RPROMPT='%{${return_status}%}%{$reset_color%}'
