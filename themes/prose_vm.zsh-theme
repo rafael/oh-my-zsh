@@ -1,6 +1,6 @@
 function virtualenv_info {
   IMVIRT_STATUS=`imvirt 2> /dev/null`
-  [ $? -ne 127 ] && [ $IMVIRT_STATUS != "Physical" ] && echo "%{$fg_bold[red]%}VM%{$reset_color%} "
+  [ $? -ne 127 ] && [ $IMVIRT_STATUS != "Physical" ] && echo "%{$fg_bold[red]%}[VM]%{$reset_color%} "
 }
 
 function box_name {
